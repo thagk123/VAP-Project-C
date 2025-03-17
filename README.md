@@ -1,7 +1,7 @@
-Περιγραφή Εργασίας
 Αυτή η εργασία αφορά τη διαχείριση δεδομένων διαδρομών, όπως απόσταση, υψομετρικές διαφορές, χρόνο ταξιδιού, και άλλες παραμέτρους. Οι λειτουργίες επιτρέπουν την ταξινόμηση, αναζήτηση και αποθήκευση δεδομένων, με δυνατότητες ανάγνωσης από το αρχείο ή από την είσοδο του χρήστη.
 
-Βασικές Λειτουργίες
+Βασικές Λειτουργίες:
+
 Εκτύπωση Δεδομένων Διαδρομών:
 Εμφάνιση διαδρομών με πληροφορίες όπως εκκίνηση, τερματισμός, μήκος, υψομετρικές διαφορές, και εκτιμώμενος χρόνος.
 
@@ -17,6 +17,7 @@
 Αποθήκευση ταξινομημένων δεδομένων σε αρχείο.
 
 Περιγραφή Κλάσεων και Συναρτήσεων
+
 struct route: Δομή που περιγράφει μια διαδρομή, με πεδία όπως:
 ekk: Σημείο εκκίνησης.
 term: Σημείο τερματισμού.
@@ -27,6 +28,7 @@ meg: Μέγιστο υψόμετρο.
 el: Ελάχιστο υψόμετρο.
 
 Κύριες Συναρτήσεις
+
 print1 και print2: Εκτύπωση διαδρομών με όλες τις πληροφορίες.
 taksinomisi: Ταξινόμηση διαδρομών κατά μήκος.
 readFromInput: Ανάγνωση δεδομένων διαδρομών από την είσοδο.
@@ -40,8 +42,6 @@ findTimely: Εύρεση διαδρομών που μπορούν να ολοκ�
 
 
 
-
-Project Description
 This project manages route data, including distance, elevation changes, travel time, and other parameters. The functions allow sorting, searching, and saving data, with capabilities to read data from a file or user input.
 
 Key Features
@@ -61,6 +61,7 @@ Read data from a file.
 Save sorted data to a file.
 
 Class and Function Descriptions
+
 struct route: A structure representing a route, with fields like:
 ekk: Starting point.
 term: Ending point.
@@ -71,6 +72,7 @@ meg: Maximum altitude.
 el: Minimum altitude.
 
 Main Functions
+
 print1 and print2: Print route details.
 taksinomisi: Sort routes by length.
 readFromInput: Read route data from user input.
