@@ -1,85 +1,52 @@
-Αυτή η εργασία αφορά τη διαχείριση δεδομένων διαδρομών, όπως απόσταση, υψομετρικές διαφορές, χρόνο ταξιδιού, και άλλες παραμέτρους. Οι λειτουργίες επιτρέπουν την ταξινόμηση, αναζήτηση και αποθήκευση δεδομένων, με δυνατότητες ανάγνωσης από το αρχείο ή από την είσοδο του χρήστη.
+# 🛤️ Route Data Management System
 
-Βασικές Λειτουργίες:
+📚 University project for the course **Basic Programming Principles**.  
 
-Εκτύπωση Δεδομένων Διαδρομών:
-Εμφάνιση διαδρομών με πληροφορίες όπως εκκίνηση, τερματισμός, μήκος, υψομετρικές διαφορές, και εκτιμώμενος χρόνος.
+This project manages **route data**, including distance, elevation changes, travel time, and other parameters.  
+The program supports sorting, searching, and saving data, with capabilities to read from a file or from user input.
 
-Αναζήτηση:
-Αναζήτηση διαδρομών με βάση το μήκος, την τοποθεσία, ή το υψόμετρο.
-Εύρεση διαδρομών με περισσότερη ανηφόρα ή κατηφόρα.
+---
 
-Ταξινόμηση:
-Ταξινόμηση των διαδρομών κατά μήκος (φθίνουσα σειρά).
+## ✨ Key Features
 
-Αποθήκευση και Ανάγνωση:
-Ανάγνωση δεδομένων από αρχείο.
-Αποθήκευση ταξινομημένων δεδομένων σε αρχείο.
+### 📋 Route Data Display
+- Show routes with details such as starting point, destination, length, elevation changes, and estimated time.
 
-Περιγραφή Κλάσεων και Συναρτήσεων
+### 🔍 Search
+- Search for routes based on length, location, or elevation.  
+- Find routes with more uphill or downhill sections.  
 
-struct route: Δομή που περιγράφει μια διαδρομή, με πεδία όπως:
-ekk: Σημείο εκκίνησης.
-term: Σημείο τερματισμού.
-mikos: Μήκος διαδρομής.
-ana: Υψομετρική ανάβαση.
-kata: Υψομετρική κατάβαση.
-meg: Μέγιστο υψόμετρο.
-el: Ελάχιστο υψόμετρο.
+### 📊 Sorting
+- Sort routes by length (in descending order).  
 
-Κύριες Συναρτήσεις
+### 💾 Saving and Reading
+- Read route data from a file.  
+- Save sorted data to a file.  
 
-print1 και print2: Εκτύπωση διαδρομών με όλες τις πληροφορίες.
-taksinomisi: Ταξινόμηση διαδρομών κατά μήκος.
-readFromInput: Ανάγνωση δεδομένων διαδρομών από την είσοδο.
-readFromFile: Ανάγνωση δεδομένων από αρχείο.
-saveData: Αποθήκευση δεδομένων σε αρχείο.
-findShort: Εύρεση διαδρομών με μήκος μικρότερο ή ίσο από συγκεκριμένη τιμή.
-findLocation: Εύρεση διαδρομών που περιέχουν συγκεκριμένη τοποθεσία.
-findAltitude: Εύρεση διαδρομών με υψόμετρο σε συγκεκριμένο εύρος.
-findUpHill και findDownHill: Εύρεση διαδρομών με περισσότερη ανηφόρα ή κατηφόρα.
-findTimely: Εύρεση διαδρομών που μπορούν να ολοκληρωθούν σε συγκεκριμένο χρόνο.
+---
 
+## 🛠️ Class and Function Descriptions
 
+### 📌 Data Structure
+- **`struct route`**: Represents a route, with fields:  
+  - `ekk`: Starting point  
+  - `term`: Ending point  
+  - `mikos`: Route length  
+  - `ana`: Uphill elevation  
+  - `kata`: Downhill elevation  
+  - `meg`: Maximum altitude  
+  - `el`: Minimum altitude  
 
-This project manages route data, including distance, elevation changes, travel time, and other parameters. The functions allow sorting, searching, and saving data, with capabilities to read data from a file or user input.
+### ⚙️ Main Functions
+- **`print1`** and **`print2`**: Print route details  
+- **`taksinomisi`**: Sort routes by length  
+- **`readFromInput`**: Read route data from user input  
+- **`readFromFile`**: Read route data from a file  
+- **`saveData`**: Save route data to a file  
+- **`findShort`**: Find routes shorter than or equal to a given length  
+- **`findLocation`**: Find routes containing a specific location  
+- **`findAltitude`**: Find routes within a specific altitude range  
+- **`findUpHill`** and **`findDownHill`**: Find routes with more uphill or downhill sections  
+- **`findTimely`**: Find routes that can be completed within a specific time  
 
-Key Features
-
-Route Data Display:
-Show routes with details like starting point, destination, length, elevation changes, and estimated time.
-
-Search:
-Search for routes based on length, location, or elevation.
-Find routes with more uphill or downhill sections.
-
-Sorting:
-Sort routes by length (in descending order).
-
-Saving and Reading:
-Read data from a file.
-Save sorted data to a file.
-
-Class and Function Descriptions
-
-struct route: A structure representing a route, with fields like:
-ekk: Starting point.
-term: Ending point.
-mikos: Route length.
-ana: Uphill elevation.
-kata: Downhill elevation.
-meg: Maximum altitude.
-el: Minimum altitude.
-
-Main Functions
-
-print1 and print2: Print route details.
-taksinomisi: Sort routes by length.
-readFromInput: Read route data from user input.
-readFromFile: Read route data from a file.
-saveData: Save data to a file.
-findShort: Find routes shorter than or equal to a given length.
-findLocation: Find routes containing a specific location.
-findAltitude: Find routes within a specific altitude range.
-findUpHill and findDownHill: Find routes with more uphill or downhill sections.
-findTimely: Find routes that can be completed within a specific time.
+---
